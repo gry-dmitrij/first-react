@@ -1,12 +1,28 @@
-.main-title {
-  color: red;
+.chat-form {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  max-width: 350px;
+  margin: 10px auto;
 }
 
-p {
-  font-size: 16px;
-  span {
-    font-style: italic;
-    font-weight: bold;
-    color: green;
-  }
+.edit {
+  margin-left: auto;
+  margin-bottom: 10px;
+  width: 200px;
 }
+
+.edit--area {
+  height: 100px;
+  resize: none;
+}
+
+.label {
+  text-align: right;
+}
+
+.chat-form__button {
+  grid-column-start: 2;
+  justify-self: end;
+}
+
+
