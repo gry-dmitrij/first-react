@@ -7,14 +7,18 @@ function Message() {
     const [message, setMessage] = useState('');
     const [author, setAuthor] = useState('Guest');
 
-    useEffect(()=> {
-        return () => {
-            // очищаем запущенные таймеры при размонтировании
-            botTimers.current.forEach(item => {
-                clearTimeout(item);
-            });
+    useEffect(() => {
+        if (messageList.length > 0
+            && messageList[messageList.length - 1].author !== 'Bot') {
+            const timerId = setTimeout(() => {
+                botTimers.current.shift();
+                addMessage('Bot', `Сообщение отправлено!`);
+            }, 1500);
+            return () => {
+                clearTimeout(timerId)
+            }
         }
-    }, []);
+    }, [messageList])
 
     const handleMessage = (event) => {
         setMessage(event.target.value);
@@ -35,15 +39,6 @@ function Message() {
     const formSubmit = (event) => {
         event.preventDefault();
         addMessage(author, message);
-        botMessage(author);
-    }
-
-    function botMessage (author) {
-        const timerId = setTimeout(() => {
-            botTimers.current.shift();
-            addMessage('Bot', `Сообщение от ${author} отправлено!`);
-        }, 1500);
-        botTimers.current.push(timerId);
     }
 
     return (

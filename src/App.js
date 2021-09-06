@@ -1,10 +1,10 @@
 import './App.css';
-import Message from "./components/Message";
+import MessageList from "./components/MessageList";
 
 function App() {
     return (
         <div className="App">
-            <Message text="Первое приложение"/>
+            <MessageList text="Первое приложение"/>
         </div>
     );
 }
