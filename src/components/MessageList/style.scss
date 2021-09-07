@@ -1,28 +1,12 @@
-.chat-form {
-  display: grid;
-  grid-template-columns: 1fr 250px;
-  max-width: 350px;
-  margin: 10px auto;
+.message-window{
+  width: 500px;
+  height: 300px;
+
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow-y: auto;
 }
 
-.edit {
-  margin-left: auto;
-  margin-bottom: 10px;
-  width: 200px;
+.chat-window {
+  display: block;
 }
-
-.edit--area {
-  height: 100px;
-  resize: none;
-}
-
-.label {
-  text-align: right;
-}
-
-.chat-form__button {
-  grid-column-start: 2;
-  justify-self: end;
-}
-
-
