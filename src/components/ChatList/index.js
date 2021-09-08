@@ -1,32 +1,22 @@
-import {useState} from "react";
+import {Link} from "react-router-dom";
 import './style.scss';
 import {List} from "@material-ui/core";
 import {ListItem} from "@material-ui/core";
 
-const chatInit = [
-    {
-        id: 1,
-        name: 'Chat1'
-    },
-    {
-        id: 2,
-        name: 'Chat2'
-    }
-];
 
-function ChatList() {
-    const [chatList] = useState(chatInit);
+export const ChatList = ({chats}) => {
+    const chatList = Object.keys(chats);
     return (
         <div className="chat-container">
             <List>
-                {chatList.map(item => {
+                {chatList.map((item, index) => {
                     return (
-                        <ListItem key={item.id}>{item.name}</ListItem>
+                        <ListItem key={index}>
+                            <Link to={`/chats/${item}`}>{item}</Link>
+                        </ListItem>
                     )}
                 )}
             </List>
         </div>
     )
 }
-
-export default ChatList;

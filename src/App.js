@@ -1,14 +1,10 @@
 import './App.css';
 import '@fontsource/roboto';
-import MessageList from "./components/MessageList";
-import ChatList from "./components/ChatList";
+import {Routes} from "./components/Routes";
 
 function App() {
     return (
-        <div className="App">
-            <ChatList/>
-            <MessageList text="Первое приложение"/>
-        </div>
+        <Routes/>
     );
 }
 
