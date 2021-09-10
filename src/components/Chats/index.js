@@ -34,7 +34,7 @@ const initChats = {
 
 export const Chats = () => {
     const [chats, setChats] = useState(initChats);
-    let {chatId} = useParams();
+    const {chatId} = useParams();
 
     const addMessage = useCallback((author, message, id) => {
         if (!id) id = chatId;
@@ -77,9 +77,10 @@ export const Chats = () => {
             <h1>Chats</h1>
             <div className="chats-container">
                 <ChatList chats={chats}/>
-                {chats[chatId] && <MessageList messages={chats[chatId]}
-                              addMessage={addMessage}/>}
-                {!chats[chatId] && <NoChat/>}
+                {chats[chatId] ?
+                    <MessageList messages={chats[chatId]}
+                              addMessage={addMessage}/>
+                    : <NoChat/>}
             </div>
         </Fragment>
     )
