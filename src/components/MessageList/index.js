@@ -37,16 +37,17 @@ export const MessageList = ({messages, addMessage}) => {
     const formSubmit = (event) => {
         event.preventDefault();
         addMessage(author, message);
+        setMessage('');
         inputRef.current.focus();
     }
 
     return (
-        <Fragment>
+        <>
             <div className="message-window">
                 {messages.map(item =>
                     <Fragment key={item.id}>
                         <div>Автор: {item.author}</div>
-                        <pre>Сообщение: {item.message}</pre>
+                        <pre>Сообщение: {item.text}</pre>
                     </Fragment>
                 )}
             </div>
@@ -70,38 +71,6 @@ export const MessageList = ({messages, addMessage}) => {
                 <Button type="submit"
                         variant="contained">Отправить</Button>
             </form>
-        </Fragment>
+        </>
     )
-    /*return (
-        <div className="">
-            <div className='message-window'>
-                {messageList.map((item) =>
-                    <Fragment key={item.id}>
-                        <div>Автор: {item.author}</div>
-                        <pre>Сообщение: {item.message}</pre>
-                    </Fragment>
-                )}
-            </div>
-            <form onSubmit={formSubmit}
-                  className={classes.root}>
-                <TextField required
-                           id="author"
-                           label="Author"
-                           className={classes.edit}
-                           value={author}
-                           onChange={handleAuthor}/>
-                <TextField id="message"
-                           label="Сообщение"
-                           className={classes.edit}
-                           multiline
-                           rows={1}
-                           variant="outlined"
-                           value={message}
-                           onChange={handleMessage}
-                           inputRef={inputRef}/>
-                <Button type="submit"
-                        variant="contained">Отправить</Button>
-            </form>
-        </div>
-    );*/
 }
