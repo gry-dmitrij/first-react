@@ -8,11 +8,12 @@ import {shallowEqual, useDispatch, useSelector} from "react-redux";
 import {getChatMessages} from "../../store/messages/selectors";
 import {addMessage} from "../../store/messages/actions";
 import {addChat, deleteChat} from "../../store/chats/actions";
+import {getChats} from "../../store/chats/selectors";
 
 export const Chats = () => {
     const {chatId} = useParams();
     const dispatch = useDispatch();
-    const chats = useSelector(state => state.chats.chats);
+    const chats = useSelector(getChats);
     const getMessages = useMemo(() => getChatMessages(chatId), [chatId]);
     const messages = useSelector(getMessages, shallowEqual);
 
