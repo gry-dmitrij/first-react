@@ -1,6 +1,6 @@
-export const createReducer = (actions, initState) =>
+export const createReducer = (reducerEffects, initState) =>
     (state = initState, {type, payload}) => {
-        return typeof actions[type] === 'function' ?
-            actions[type](state, payload) :
+        return typeof reducerEffects[type] === 'function' ?
+            reducerEffects[type](state, payload) :
             state;
     }

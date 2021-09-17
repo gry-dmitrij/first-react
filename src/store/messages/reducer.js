@@ -6,7 +6,7 @@ const initState = {
     messages: {},
 }
 
-const actions = {
+const reducerEffects = {
     [ADD_MESSAGE] (state, {chatId, text, author}) {
        return {
            ...state,
@@ -42,5 +42,5 @@ const actions = {
     }
 }
 
-export const messagesReducer = createReducer(actions, initState);
+export const messagesReducer = createReducer(reducerEffects, initState);
 

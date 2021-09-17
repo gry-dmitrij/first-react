@@ -8,7 +8,7 @@ const initState = {
     }
 }
 
-const actions = {
+const reducerEffects = {
     [ADD_CHAT] (state, payload) {
         const id = `chats-${Date.now()}`;
         return {
@@ -29,4 +29,4 @@ const actions = {
     },
 }
 
-export const chatsReducer = createReducer(actions, initState);
+export const chatsReducer = createReducer(reducerEffects, initState);
