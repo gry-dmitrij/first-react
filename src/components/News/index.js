@@ -50,7 +50,7 @@ export const News = () => {
                 </>
             )}
             {loading && <CircularProgress/>}
-            <button onClick={addNewArticles} disabled={loading}>Еще</button>
+            <button onClick={addNewArticles} disabled={loading}>Загрузить еще новости...</button>
         </>
     )
 }
