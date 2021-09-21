@@ -1,5 +1,5 @@
 import './style.scss';
-import {Link, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import {Fragment, useCallback, useMemo} from "react";
 import {ChatList} from "../ChatList";
 import {MessageList} from "../MessageList";
@@ -33,7 +33,6 @@ export const Chats = () => {
 
     return (
         <Fragment>
-            <Link to="/">Home</Link>
             <h1>Chats</h1>
             <div className="chats-container">
                 <ChatList chats={chats}
