@@ -1,1 +1,3 @@
-export const getChats = (state) => state.chats.chats;
+export const getChats = (state) => {
+    return state.chats.chats;
+}

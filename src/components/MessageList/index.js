@@ -3,6 +3,8 @@ import {Fragment, useEffect, useRef, useState} from "react";
 import {Button} from "@material-ui/core";
 import {TextField} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
+import {useSelector} from "react-redux";
+import {getName} from "../../store/profile/selectors";
 
 const useStyles = makeStyles({
     root: {
@@ -20,7 +22,7 @@ export const MessageList = ({messages, addMessage}) => {
     const classes = useStyles();
     const inputRef = useRef(null);
     const [message, setMessage] = useState('');
-    const [author, setAuthor] = useState('Guest');
+    const author = useSelector(getName);
 
     useEffect(() => {
         inputRef.current.focus();
@@ -28,10 +30,6 @@ export const MessageList = ({messages, addMessage}) => {
 
     const handleMessage = (event) => {
         setMessage(event.target.value);
-    }
-
-    const handleAuthor = (event) => {
-        setAuthor(event.target.value);
     }
 
     const formSubmit = (event) => {
@@ -53,12 +51,6 @@ export const MessageList = ({messages, addMessage}) => {
             </div>
             <form onSubmit={formSubmit}
                   className={classes.root}>
-                <TextField required
-                           id="author"
-                           label="Author"
-                           className={classes.edit}
-                           value={author}
-                           onChange={handleAuthor}/>
                 <TextField id="message"
                            label="Сообщение"
                            className={classes.edit}

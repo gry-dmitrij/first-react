@@ -1,19 +1,16 @@
-import {TOGGLE_ACTION} from "./actions";
+import {createReducer} from "../createReducer";
+import {SET_PROFILE} from "./actions";
 
-
-const initialState = {
-    active: false,
+const initState = {
+    name: '',
 }
 
-export const profileReducer = (state = initialState, action) => {
-  switch (action.type) {
-      case TOGGLE_ACTION: {
-          return {
-              ...state,
-              active: action.payload,
-          }
-      }
-      default:
-          return state;
-  }
+const reducerEffects = {
+    [SET_PROFILE] (state, payload) {
+        return {
+            ...payload
+        }
+    },
 }
+
+export const profileReducer = createReducer(reducerEffects, initState);
