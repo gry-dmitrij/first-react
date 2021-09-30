@@ -1,0 +1,588 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component test snapshot test 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <h1>
+        Home
+      </h1>
+      <h2>
+        Sign Up
+      </h2>
+      <a
+        href="/login"
+      >
+        Login
+      </a>
+      <form>
+        <label
+          for="userName"
+        >
+          User name:
+        </label>
+        <input
+          id="userName"
+          type="text"
+        />
+        <br />
+        <label
+          for="userPass"
+        >
+          Password:
+        </label>
+        <input
+          id="userPass"
+          type="password"
+        />
+        <br />
+        <input
+          type="submit"
+          value="Sign up"
+        />
+      </form>
+    </div>
+  </body>,
+  "container": <div>
+    <h1>
+      Home
+    </h1>
+    <h2>
+      Sign Up
+    </h2>
+    <a
+      href="/login"
+    >
+      Login
+    </a>
+    <form>
+      <label
+        for="userName"
+      >
+        User name:
+      </label>
+      <input
+        id="userName"
+        type="text"
+      />
+      <br />
+      <label
+        for="userPass"
+      >
+        Password:
+      </label>
+      <input
+        id="userPass"
+        type="password"
+      />
+      <br />
+      <input
+        type="submit"
+        value="Sign up"
+      />
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Home component test snapshot test 2`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <h1>
+        Home
+      </h1>
+      <h2>
+        Sign Up
+      </h2>
+      <a
+        href="/login"
+      >
+        Login
+      </a>
+      <form>
+        <label
+          for="userName"
+        >
+          User name:
+        </label>
+        <input
+          id="userName"
+          type="text"
+        />
+        <br />
+        <label
+          for="userPass"
+        >
+          Password:
+        </label>
+        <input
+          id="userPass"
+          type="password"
+        />
+        <br />
+        <input
+          type="submit"
+          value="Sign up"
+        />
+      </form>
+    </div>
+    <div>
+      <h1>
+        Home
+      </h1>
+      <h2>
+        Login
+      </h2>
+      <a
+        href="/signup"
+      >
+        Sign up
+      </a>
+      <form>
+        <label
+          for="userName"
+        >
+          User name:
+        </label>
+        <input
+          id="userName"
+          type="text"
+        />
+        <br />
+        <label
+          for="userPass"
+        >
+          Password:
+        </label>
+        <input
+          id="userPass"
+          type="password"
+        />
+        <br />
+        <input
+          type="submit"
+          value="Login"
+        />
+      </form>
+    </div>
+  </body>,
+  "container": <div>
+    <h1>
+      Home
+    </h1>
+    <h2>
+      Login
+    </h2>
+    <a
+      href="/signup"
+    >
+      Sign up
+    </a>
+    <form>
+      <label
+        for="userName"
+      >
+        User name:
+      </label>
+      <input
+        id="userName"
+        type="text"
+      />
+      <br />
+      <label
+        for="userPass"
+      >
+        Password:
+      </label>
+      <input
+        id="userPass"
+        type="password"
+      />
+      <br />
+      <input
+        type="submit"
+        value="Login"
+      />
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Home component test snapshot test login 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <h1>
+        Home
+      </h1>
+      <h2>
+        Login
+      </h2>
+      <a
+        href="/signup"
+      >
+        Sign up
+      </a>
+      <form>
+        <label
+          for="userName"
+        >
+          User name:
+        </label>
+        <input
+          id="userName"
+          type="text"
+        />
+        <br />
+        <label
+          for="userPass"
+        >
+          Password:
+        </label>
+        <input
+          id="userPass"
+          type="password"
+        />
+        <br />
+        <input
+          type="submit"
+          value="Login"
+        />
+      </form>
+    </div>
+  </body>,
+  "container": <div>
+    <h1>
+      Home
+    </h1>
+    <h2>
+      Login
+    </h2>
+    <a
+      href="/signup"
+    >
+      Sign up
+    </a>
+    <form>
+      <label
+        for="userName"
+      >
+        User name:
+      </label>
+      <input
+        id="userName"
+        type="text"
+      />
+      <br />
+      <label
+        for="userPass"
+      >
+        Password:
+      </label>
+      <input
+        id="userPass"
+        type="password"
+      />
+      <br />
+      <input
+        type="submit"
+        value="Login"
+      />
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Home component test snapshot test signup 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <h1>
+        Home
+      </h1>
+      <h2>
+        Sign Up
+      </h2>
+      <a
+        href="/login"
+      >
+        Login
+      </a>
+      <form>
+        <label
+          for="userName"
+        >
+          User name:
+        </label>
+        <input
+          id="userName"
+          type="text"
+        />
+        <br />
+        <label
+          for="userPass"
+        >
+          Password:
+        </label>
+        <input
+          id="userPass"
+          type="password"
+        />
+        <br />
+        <input
+          type="submit"
+          value="Sign up"
+        />
+      </form>
+    </div>
+  </body>,
+  "container": <div>
+    <h1>
+      Home
+    </h1>
+    <h2>
+      Sign Up
+    </h2>
+    <a
+      href="/login"
+    >
+      Login
+    </a>
+    <form>
+      <label
+        for="userName"
+      >
+        User name:
+      </label>
+      <input
+        id="userName"
+        type="text"
+      />
+      <br />
+      <label
+        for="userPass"
+      >
+        Password:
+      </label>
+      <input
+        id="userPass"
+        type="password"
+      />
+      <br />
+      <input
+        type="submit"
+        value="Sign up"
+      />
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
